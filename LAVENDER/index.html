@@ -1,0 +1,720 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <title>لافندر</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <!--Bootstrap ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <!--vendor css ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+  <!--Link Swiper's CSS ================================================== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!--Link AOS's CSS ================================================== -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Style Sheet ================================================== -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Google Fonts ================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+    <symbol id="arrow-right" viewBox="0 0 24 24">
+      <path fill="currentColor" fill-rule="evenodd"
+        d="M13.47 5.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H4a.75.75 0 0 1 0-1.5h14.19l-4.72-4.72a.75.75 0 0 1 0-1.06"
+        clip-rule="evenodd" />
+    </symbol>
+    <symbol id="arrow-left" viewBox="0 0 24 24">
+      <path fill="currentColor" fill-rule="evenodd"
+        d="M10.53 5.47a.75.75 0 0 1 0 1.06l-4.72 4.72H20a.75.75 0 0 1 0 1.5H5.81l4.72 4.72a.75.75 0 1 1-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.06 0"
+        clip-rule="evenodd" />
+    </symbol>
+   
+    <symbol xmlns="http://www.w3.org/2000/svg" id="navbar-icon" viewBox="0 0 16 16">
+      <path
+        d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
+    </symbol>
+  </svg>
+
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <header id="header">
+    <nav id="primary-header" class="navbar navbar-expand-lg py-4">
+      <div class="container-fluid padding-side">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/aaa3.jpg" class="logo img-fluid">
+          </a>
+          <button class="navbar-toggler border-0 d-flex d-lg-none order-3 p-2 shadow-none" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false">
+            <svg class="navbar-icon" width="60" height="60">
+              <use xlink:href="#navbar-icon"></use>
+            </svg>
+          </button>
+          <div class="header-bottom offcanvas offcanvas-end " id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+            <div class="offcanvas-header px-4 pb-0">
+              <button type="button" class="btn-close btn-close-black mt-2" data-bs-dismiss="offcanvas"
+                aria-label="Close" data-bs-target="#bdNavbar"></button>
+            </div>
+
+            <div class="offcanvas-body align-items-center justify-content-center">
+              <ul class="navbar-nav align-items-center mb-2 mb-lg-0" dir="rtl">
+                <li class="nav-item px-3">
+                  <a class="nav-link p-0" href="index.html">عنا</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link p-0" href="#flower"> زهور </a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link p-0" href="#out">نباتات خارجية</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link p-0" href="#in">نباتات داخلية</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  
+  <section id="about" data-aos="fade-up">
+    <div class="container-fluid padding-side">
+      <div class="d-flex rounded-5"
+        style="background-image: url(images/abc.jpg); background-size: cover; background-repeat: no-repeat; height: 85vh; background-position: center;">
+        <div class="row align-items-center m-auto pt-5 px-4 px-lg-0">
+          <div class="text-start col-md-6 col-lg-5 col-xl-6 offset-lg-1">
+            <h2 class="display-1 fw-normal" >LAVENDER لافندر</h2>
+          </div>
+          <div class="form-group flex-wrap bg-white p-5 rounded-4 ms-md-5">
+            <p dir="rtl">تُعدُّ النباتات جزءًا أساسيًا من البيئة الطبيعية، وتلعب دورًا حيويًا في توازن النظام البيئي والحفاظ على الحياة على سطح الأرض. من خلال هذا المشروع، نسلّط الضوء على عالم النباتات بأنواعها المختلفة، ونتناول تصنيفاتها، وخصائصها، وفوائدها البيئية والصحية، إلى جانب التعرّف على أنواع الزهور التي تُعد من أبهى مظاهر الجمال الطبيعي، ونستعرض تنوّعها وأهم استخداماتها في الحياة اليومية.</p>
+            <a href="#flower" class="btn btn-arrow btn-primary mt-3">
+              <span>لمعرفة المزيد <svg width="18" height="18">
+                  <use xlink:href="#arrow-right"></use>
+                </svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-us" class="padding-large">
+    <div class="container-fluid padding-side" data-aos="fade-up">
+      <div class="row align-items-start mt-3 mt-lg-5">
+        <div class="col-lg-6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="flower" class="padding-medium">
+    <div class="container-fluid padding-side" data-aos="fade-up">
+      <div class="d-flex flex-wrap align-items-center justify-content-between" dir="rtl">
+        <div >
+          <h3 class="display-3 fw-normal text-center" >زهور</h3>
+        </div>
+      </div>
+      <div class="swiper room-swiper mt-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/جوري.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">ورد الجوري</h4>
+                <p class="product-paragraph text-white">ورد كلاسيكي مشهور برائحته العطرية القوية، يُستخدم كثيرًا في العطور وماء الورد</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal">Damask Rose ورد الجوري</h4>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/توليب.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">التوليب</h4>
+                <p class="product-paragraph text-white">أنيق وبسيط، يرمز للحب والراحة، ويتوفر بألوان كثيرة منها الأحمر، الأصفر، والزهري</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal">Tulip التوليب </h4>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/دوار_الشمس.jpeg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">دوار الشمس</h4>
+                <p class="product-paragraph text-white">زهرة مشرقة ومبهجة تتبع حركة الشمس، ترمز للإيجابية والولاء</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Sunflower دوار الشمس</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/البيغونيا.jpeg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">البيغونيا  </h4>
+                <p class="product-paragraph text-white">ورود صغيرة جذابة، تتنوع بين الأحمر والزهري والبرتقالي، محبوبة للزراعة الداخلية</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Begonia البيغونيا  </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/الفاونيا.jpeg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">الفاوانيا  </h4>
+                <p class="product-paragraph text-white">زهرة فخمة وكبيرة الحجم، ترمز للثروة والسعادة</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Peony الفاوانيا </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/هيدرا.jpeg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">الهيدرانجيا  </h4>
+                <p class="product-paragraph text-white">زهور كروية الشكل تأتي بألوان متعددة مثل الأزرق والزهري، ترمز للامتنان </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Hydrangea الهيدرانجيا </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/قرنفل.jpeg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">القرنفل  </h4>
+                <p class="product-paragraph text-white">زهرة قوية تعيش طويلًا بعد القطاف،وتُستخدم بكثرة في الباقات</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Carnation القرنفل </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/اقحوان.jpeg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">الأقحوان  </h4>
+                <p class="product-paragraph text-white">زهرة مشهورة ترمز للسعادة والعافية، تُستخدم في الحدائق والباقات اليومية</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Chrysanthemum الأقحوان  </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/اللوتس.jpeg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">اللوتس  </h4>
+                <p class="product-paragraph text-white">رمز للنقاء والقوة، تنمو في الماء، وتُعد مقدسة في عدة ثقافات</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Lotus اللوتس </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/النرجس.jpeg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">النرجس </h4>
+                <p class="product-paragraph text-white">زهور صفراء مشرقة، تدل على الأمل والبدايات الجديدة</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Daffodil النرجس </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/الساكورا.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">زهرة الكرز </h4>
+                <p class="product-paragraph text-white">رمز الجمال الزائل والربيع، تُزهر لفترة قصيرة لكنها تترك أثرًا لا يُنسى</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Cherry Blossom زهرة الكرز </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/الزنبق.jpeg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">الزنبق </h4>
+                <p class="product-paragraph text-white">زهرة أنيقة وناعمة، ترمز للنقاء، وتُستخدم بكثرة في المناسبات الرسمية</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Lily الزنبق </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/الجيسبوفبا.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">زهرة الجيبسوفيليا  </h4>
+                <p class="product-paragraph text-white">زهور صغيرة بيضاء تُستخدم كزينة ناعمة في تنسيقات الورود والباقات</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Baby’s Breath  الجيبسوفيليا </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/اللافندر.jpeg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">الخزامى</h4>
+                <p class="product-paragraph text-white">زهور بنفسجية برائحة مهدئة، تستخدم في العطور والزيوت، وتضفي لمسة ناعمة لأي تنسيق</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal">Lavender الخزامى</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/الأوركيد.jpeg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">الأوركيد </h4>
+                <p class="product-paragraph text-white">رمز الفخامة والرقي، بأشكاله الغريبة وألوانه الجذابة، مثالي للديكور الفاخر</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal">Orchid الأوركيد</h4>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination room-pagination position-relative mt-5"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <section id="out" class="padding-medium">
+    <div class="container-fluid padding-side" data-aos="fade-up">
+      <div class="d-flex flex-wrap align-items-center justify-content-between" dir="rtl">
+        <div >
+          <h3 class="display-3 fw-normal text-center" >نباتات خارجية</h3>
+        </div>
+      </div>
+      <div class="swiper room-swiper mt-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/rehan.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white"> الريحان</h4>
+                <p class="product-paragraph text-white">يعد الريحان مضاد للالتهابات ويحتوي على مركبات مضادة للالتهابات تساعد في تقليل الالتهابات في الجسم
+                  </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal">Basil   الريحان</h4>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/jabal.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white"> اكليل الجبل   </h4>
+                <p class="product-paragraph text-white"> يعززاكليل الجبل  التركيز، ويقوي الشعر، ويحسن من صحة الجهاز الهضمي
+                </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal">Rosemary اكليل الجبل </h4>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/shamr.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white"> الشمر البري </h4>
+                <p class="product-paragraph text-white"> يساعد الشمر البري في الهضم، يخفف من الانتفاخ، ويدعم صحة الجهاز التنفسي</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Wild fennel الشمر البري</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/nardin.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">الناردين  </h4>
+                <p class="product-paragraph text-white">يستخدم الناردين كمهدئ طبيعي للأعصاب، ويساعد على تحسين النوم والأرق ويخفف من التوتر والقلق
+                  </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Valerian الناردين</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/arak.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">الاراك</h4>
+                <p class="product-paragraph text-white">يستخدم المسواك المصنوع من خشب الأراك بشكل رئيسي في تنظيف الأسنان، وهو من العادات الصحية القديمة التي تعزز نظافة الفم.
+                </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Araak الاراك </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/bosar.png" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">البوصر  </h4>
+                <p class="product-paragraph text-white"> يُستخدم البوصر لتحسين ضغط الدم، وتخفيف الالتهابات، وله خصائص مضادة للأكسدة           </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Great Mullein البوصر </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/bilsan.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">البلسان  </h4>
+                <p class="product-paragraph text-white">يستخدم في التجميل والطبيعة، ويُعتقد أن له خصائص مضادة للأكسدة ومهدئة </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Commiphora  البلسان </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/sider.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">السدر</h4>
+                <p class="product-paragraph text-white">يستخدم في التجميل والعناية بالشعر ويُعتقد أن له خصائص ومهدئة </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Sider  السدر  </h4>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/heena.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">الحناء  </h4>
+                <p class="product-paragraph text-white">تمتلك خصائص مضادة للالتهابات ومطهرة وتستخدم لعلاج الجروح الصغيرة، والطفح الجلدي، والحروق البسيطة</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Henaa الحناء </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/sabar.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white"> الصبار  </h4>
+                <p class="product-paragraph text-white">يزرع بكثرة في المناطق الصحراوية، ويستخدم لعلاج الحروق والجروح، وهو متوفر بشكل واسع</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Cactus الصبار </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/talh.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">الطلح </h4>
+                <p class="product-paragraph text-white"> يستخدم لتثبيت التربة، وتحسين جودة التربة الرملية، ويُستخدم في بعض الأحيان في العلاج الشعبي لمرضى الالتهابات الجلدية والمشاكل التنفسية </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Talh الطلح </h4>
+            </div>
+          </div>
+         
+
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/tarfaa.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">الطرفاء</h4>
+                <p class="product-paragraph text-white">تستخدم في صناعة العطور، وتُزرع للزينة
+                  وتضفي جوا من الانتعاش في الأماكن المفتوحة </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal">Tarfaa الطرفاء</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/camilia.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">الكاميليا </h4>
+                <p class="product-paragraph text-white">زهور جميلة تُستخدم في الزينة، وتُنتج شاي الكاميليا </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal">Cameilia الكاميليا</h4>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination room-pagination position-relative mt-5"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <section id="in" class="padding-medium">
+    <div class="container-fluid padding-side" data-aos="fade-up">
+      <div class="d-flex flex-wrap align-items-center justify-content-between" dir="rtl">
+        <div >
+          <h3 class="display-3 fw-normal text-center" >نباتات داخلية</h3>
+        </div>
+      </div>
+      <div class="swiper room-swiper mt-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/1 .jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">نبتة الثعبان </h4>
+                <p class="product-paragraph text-white"> تُعرف هذه النبتة بأوراقها المستقيمة والمخططة، وتُعتبر رمزًا للحماية والقوة. تنمو بشكل جيد في الإضاءة المنخفضة إلى المتوسطة، وتُروى فقط عندما تجف التربة تمامًا. من أبرز مميزاتها أنها تنقّي الهواء، شديدة التحمل، وتناسب المبتدئين تمامًا </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal">Sansevieria نبتة الثعبان</h4>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/2.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">فيكس ليراتا</h4>
+                <p class="product-paragraph text-white">هي نبتة ذات أوراق كبيرة على شكل كمان، وتعبر عن التوازن والوفرة. تحتاج إلى ضوء ساطع غير مباشر، وتُروى عندما تكون التربة شبه جافة. تضفي لمسة فخمة على أي مساحة لكنها تحتاج إلى بعض العناية والاهتمام لتزدهر</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal">Fiddle Leaf Fig فيكس ليراتا </h4>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/3.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">البوتس  </h4>
+                <p class="product-paragraph text-white">البوتس نبتة متسلقة سريعة النمو بأوراق قلبية الشكل، ترمز إلى النمو والمرونة. تنمو في مختلف درجات الإضاءة ولكن تفضل المتوسطة، وتُروى مرة أسبوعياً تقريبًا. من مميزاتها سهولة العناية وقدرتها على تنقية الهواء، ما يجعلها مثالية للمبتدئين</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Pothos  البوتس</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/4.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">زنبق السلام  </h4>
+                <p class="product-paragraph text-white">نبتة رشيقة ذات زهور بيضاء ترمز للسلام والنقاء، تفضل الإضاءة المتوسطة وتحتاج إلى ري منتظم عند جفاف سطح التربة. من أهم مميزاتها أنها تنقي الهواء وتضفي جوًا هادئًا ومريحًا في المكان</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Peace Lily زنبق السلام  </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/5.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">ألوفيرا   </h4>
+                <p class="product-paragraph text-white">نبتة عصارية بأوراق تحتوي على جل علاجي، ترمز للشفاء والتجدد. تحتاج إلى ضوء ساطع مباشر وتُروى فقط عندما تكون التربة جافة تمامًا. من أهم مزاياها سهولة العناية وفوائدها الطبية المتعددة</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Aloe Vera ألوفيرا  </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/6.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">دراسينا   </h4>
+                <p class="product-paragraph text-white">نبتة طويلة بأوراق رفيعة خضراء أو مخططة، تعبّر عن النمو الداخلي والتوازن. تحتاج إلى إضاءة متوسطة، وتُروى باعتدال مع السماح للتربة بالجفاف بين الريات. مميزاتها تشمل تنقية الهواء ومظهرها الجذاب </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Dracaena دراسينا  </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/7.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">كروتون   </h4>
+                <p class="product-paragraph text-white">تتميز هذه النبتة بأوراقها متعددة الألوان، وترمز إلى الفرح والطاقة. تحتاج إلى ضوء ساطع غير مباشر وتحب الرطوبة العالية، ويجب ريّها بانتظام. تضيف لمسة لونية جريئة لأي ركن في المنزل</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Croton كروتون  </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/9.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">زاميوكولكاس   </h4>
+                <p class="product-paragraph text-white">نبتة أنيقة ذات أوراق لامعة ومظهر معماري، ترمز إلى الرخاء والنجاح. تتحمل الإضاءة المنخفضة، وتُروى فقط عند جفاف التربة. من أبرز مميزاتها سهولة العناية وقدرتها على التكيف مع البيئات المختلفة </p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> ZZ Plan زاميوكولكاس   </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/10.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">فيلوديندرون   </h4>
+                <p class="product-paragraph text-white">نبتة استوائية ذات أوراق جذابة ومتسلقة، ترمز للحب والعطاء. تفضل الضوء المتوسط غير المباشر وتُروى عندما تجف التربة جزئيًا. تتميز بسرعة نموها وقدرتها على التأقلم مع بيئات مختلفة</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Philodendron فيلوديندرون  </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/11.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">كالاثيا  </h4>
+                <p class="product-paragraph text-white">نبتة ذات أوراق مزخرفة برسومات فنية، وترمز إلى الإبداع والتجدد. تحب الإضاءة الضعيفة إلى المتوسطة وتحتاج إلى رطوبة معتدلة وري منتظم. من مميزاتها حركة الأوراق اليومية وجمالها الفريد</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Calathea كالاثيا </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/12.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white"> أريكا بالم  </h4>
+                <p class="product-paragraph text-white">نخلة داخلية أنيقة تشبه النخيل الاستوائي، ترمز للهدوء والراحة. تحتاج إلى إضاءة ساطعة غير مباشرة وتُروى بشكل منتظم دون إغراق. من أبرز مميزاتها تنقية الهواء وإضفاء لمسة استوائية ناعمة</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Areca Palm    أريكا بالم </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/13.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">مارانتا  </h4>
+                <p class="product-paragraph text-white">نبتة جذابة تتحرك أوراقها حسب أوقات اليوم، ترمز للتأمل والسكينة. تنمو جيدًا في الإضاءة المنخفضة وتحب الرطوبة والري المنتظم. من مميزاتها شكلها الفريد وسلوكها المتفاعل مع الضوء</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Prayer Plan مارانتا </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-item position-relative bg-black rounded-4 overflow-hidden">
+              <img src="images/14.jpg" alt="img" class="post-image img-fluid rounded-4">
+              <div class="product-description position-absolute p-5 text-start">
+                <h4 class="display-6 fw-normal text-white">هويا    </h4>
+                <p class="product-paragraph text-white">نبتة شمعية أوراقها سميكة وزهورها ناعمة وعطرة، ترمز للولاء والذكريات. تحتاج إلى إضاءة ساطعة غير مباشرة وتُروى عندما تجف التربة. مميزة بطول عمرها وإمكانية إزهارها داخل المنزل</p>
+              </div>
+            </div>
+            <div class="room-content text-center mt-3">
+              <h4 class="display-6 fw-normal"> Hoya   هويا  </h4>
+            </div>
+          </div>
+
+          
+        </div>
+        <div class="swiper-pagination room-pagination position-relative mt-5"></div>
+      </div>
+    </div>
+  </section>
+    <hr class="text-black">
+    <footer class="row">
+      <div class="col-md-6 col-lg-3 offset-lg-1 mb-4 mb-lg-0">
+        <p class="m-0">© Copyright 303 </p>
+      </div>
+    </footer>
+  </section>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>
